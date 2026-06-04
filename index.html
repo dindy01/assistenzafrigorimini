@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pronto Intervento Celle Frigorifere Rimini | Assistenza H24</title>
+    <meta name="description" content="Riparazione urgente celle frigorifere e impianti di refrigerazione industriale a Rimini e provincia. Intervento rapido entro 60 minuti h24.">
+    <style>
+        :root { --primary: #e53e3e; --dark: #1a202c; --light: #f7fafc; }
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; margin: 0; padding: 0; background: var(--light); color: var(--dark); line-height: 1.5; }
+        .hero { padding: 40px 20px; text-align: center; background: #fff; border-bottom: 2px solid #edf2f7; }
+        h1 { font-size: 28px; color: var(--primary); margin: 0 0 10px 0; font-weight: 800; }
+        h2 { font-size: 18px; color: var(--dark); margin: 0 0 20px 0; font-weight: 600; }
+        .cta-button { display: block; background: var(--primary); color: white; text-decoration: none; text-align: center; padding: 18px; font-size: 20px; font-weight: bold; border-radius: 8px; margin: 20px auto; max-width: 400px; box-shadow: 0 4px 6px rgba(229, 62, 62, 0.2); }
+        .form-container { background: white; padding: 30px 20px; max-width: 400px; margin: 20px auto; border-radius: 8px; border: 1px solid #e2e8f0; }
+        .form-group { margin-bottom: 15px; }
+        .form-group label { display: block; margin-bottom: 5px; font-weight: bold; font-size: 14px; }
+        .form-group input, .form-group select { width: 100%; padding: 12px; border: 1px solid #cbd5e0; border-radius: 6px; box-sizing: border-box; font-size: 16px; }
+        .submit-btn { width: 100%; background: var(--dark); color: white; border: none; padding: 15px; font-size: 18px; font-weight: bold; border-radius: 6px; cursor: pointer; }
+        .features { max-width: 440px; margin: 30px auto; padding: 0 20px; font-size: 15px; }
+        .features ul { padding-left: 20px; }
+        .features li { margin-bottom: 10px; }
+    </style>
+</head>
+<body>
+
+    <div class="hero">
+        <h1>Pronto Intervento Celle Frigorifere Rimini</h1>
+        <h2>Assistenza Tecnica e Riparazione Frigoriferi Industriali Urgente H24</h2>
+        <a href="tel:+39XXXXXXXXXX" class="cta-button">📞 CHIAMACI ORA: +39 XXX XXXXXXX</a>
+    </div>
+
+    <div class="form-container">
+        <h3 style="margin-top:0; text-align:center;">Richiedi un Tecnico Urgente</h3>
+        <form id="leadForm">
+            <div class="form-group">
+                <label for="name">Nome Attività / Persona</label>
+                <input type="text" id="name" name="name" required placeholder="Es. Hotel Bella Vista">
+            </div>
+            <div class="form-group">
+                <label for="phone">Telefono Cellulare</label>
+                <input type="tel" id="phone" name="phone" required placeholder="Es. 3331234567">
+            </div>
+            <div class="form-group">
+                <label for="issue">Tipo di Guasto</label>
+                <select id="issue" name="issue" required>
+                    <option value="">Seleziona il problema...</option>
+                    <option value="Cella Non Raffredda">La Cella Non Raffredda</option>
+                    <option value="Perdita Gas / Liquido">Perdita di Gas o Liquido</option>
+                    <option value="Fabbricatore Ghiaccio Bloccato">Fabbricatore Ghiaccio Bloccato</option>
+                    <option value="Blocco Elettronico / Allarme">Blocco Elettronico / Segnala Allarme</option>
+                </select>
+            </div>
+            <button type="submit" class="submit-btn">INVIA RICHIESTA</button>
+        </form>
+    </div>
+
+    <div class="features">
+        <h3>Interventi Rapidi Entro 60 Minuti a Rimini e Provincia</h3>
+        <ul>
+            <li><strong>Copertura Totale:</strong> Rimini, Riccione, Cattolica, Bellaria, Misano Adriatico.</li>
+            <li><strong>Tecnici Specializzati:</strong> Diagnostica rapida su impianti Zanussi, Angelo Po, Bonnet Névé e principali marchi industriali.</li>
+            <li><strong>Disponibilità Immediata:</strong> Servizio di emergenza attivo per la ristorazione e il settore alberghiero della riviera.</li>
+        </ul>
+    </div>
+<script>
+document.getElementById('leadForm').addEventListener('submit', function(e) {
+    // 1. Prevent the page from reloading out from under the user
+    e.preventDefault();
+
+    // 2. Extract raw data strings from DOM elements
+    const payload = {
+        lead_name: document.getElementById('name').value,
+        lead_phone: document.getElementById('phone').value,
+        lead_issue: document.getElementById('issue').value,
+        timestamp: new Date().toISOString()
+    };
+
+    // 3. Define the Make.com Webhook Endpoint
+    // REPL_WITH_YOUR_MAKE_WEBHOOK_URL inside the single quotes below
+    const webhookUrl = 'REPL_WITH_YOUR_MAKE_WEBHOOK_URL';
+
+    // 4. Asynchronous data transmission array
+    fetch(webhookUrl, {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(payload)
+    })
+    .then(response => {
+        if (response.ok) {
+            // 5. Success Action UI Override
+            alert('Richiesta inviata con successo. Un tecnico ti contatterà a breve.');
+            document.getElementById('leadForm').reset();
+        } else {
+            throw new Error('Network response failure.');
+        }
+    })
+    .catch(error => {
+        // 6. Local client fail-safe alert fallback
+        console.error('Transmission error:', error);
+        alert('Errore di connessione. Se è urgente, clicca sul pulsante rosso per chiamarci direttamente.');
+    });
+});
+</script>
+</body>
+</html>
