@@ -1,0 +1,37 @@
+{
+  "slug": "elettrodomestici-bologna",
+  "domain": "DA_INSERIRE-dominio-elettrodomestici-bologna.it",
+  "site_name": "Riparazione Elettrodomestici Bologna",
+  "color": "#2b6cb0",
+  "meta_title": "Riparazione Elettrodomestici a Domicilio Bologna | Lavatrice, Frigo, Lavastoviglie",
+  "meta_description": "Lavatrice, frigorifero o lavastoviglie guasti a Bologna? Ti mettiamo in contatto con un tecnico a domicilio della tua zona. Chiamata gratuita, preventivo senza impegno.",
+  "badge": "A domicilio · Bologna e provincia",
+  "h1": "Elettrodomestico rotto a Bologna?",
+  "subtitle": "Lavatrice, frigorifero, lavastoviglie, forno: ti mettiamo in contatto con un tecnico a domicilio della tua zona.",
+  "phone_display": "DA_INSERIRE",
+  "phone_tel": "+39DA_INSERIRE",
+  "hours": "Lun–Sab 8:00–20:00",
+  "webhook": "https://hook.eu1.make.com/ba7bw9e48s6bw4au39r3u6fu8prt2sws",
+  "issues_title": "Cosa ripariamo",
+  "issues": [
+    {"label": "Lavatrice", "desc": "non scarica, non centrifuga, perde acqua, oblò bloccato, codice di errore."},
+    {"label": "Frigorifero / congelatore", "desc": "non raffredda, forma ghiaccio, rumoroso, perde acqua, motore che non si ferma."},
+    {"label": "Lavastoviglie", "desc": "non lava, non scarica, non asciuga, perde acqua."},
+    {"label": "Asciugatrice", "desc": "non scalda, non gira, si ferma a metà ciclo."},
+    {"label": "Forno / piano cottura", "desc": "non scalda, resistenza bruciata, termostato guasto (solo elettrici)."}
+  ],
+  "warning": "",
+  "zones": ["Bologna centro", "Navile", "San Donato–San Vitale", "Santo Stefano", "Porto–Saragozza", "Borgo Panigale–Reno", "Savena", "Casalecchio di Reno", "San Lazzaro di Savena", "Castel Maggiore", "Zola Predosa", "Granarolo dell'Emilia", "Castenaso", "Pianoro"],
+  "brands_title": "Marchi trattati",
+  "brands": ["Whirlpool", "Indesit", "Hotpoint", "Bosch", "Siemens", "Samsung", "LG", "Electrolux", "AEG", "Candy", "Hoover", "Beko", "Smeg", "Miele"],
+  "faq": [
+    {"q": "Quanto costa l'uscita del tecnico?", "a": "Il servizio di contatto è gratuito. Il diritto di chiamata e la riparazione li concordi direttamente con il tecnico, che ti dà un preventivo prima di intervenire."},
+    {"q": "Conviene riparare o ricomprare?", "a": "Dipende da età e guasto. Il tecnico ti dice onestamente se la riparazione conviene prima di procedere."},
+    {"q": "Chi esegue l'intervento?", "a": "Un tecnico indipendente della tua zona, che esegue il lavoro e ti rilascia direttamente fattura o ricevuta."},
+    {"q": "L'elettrodomestico è in garanzia?", "a": "Se è ancora in garanzia contatta prima il venditore o l'assistenza ufficiale del marchio."}
+  ],
+  "operator_line": "Servizio gestito da DA_INSERIRE nome e cognome · email: DA_INSERIRE",
+  "gads_id": "",
+  "gads_call_label": "",
+  "gads_form_label": ""
+}

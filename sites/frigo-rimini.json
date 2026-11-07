@@ -1,0 +1,38 @@
+{
+  "slug": "frigo-rimini",
+  "root": true,
+  "domain": "assistenzafrigorimini.it",
+  "site_name": "Assistenza Frigo Rimini",
+  "color": "#c53030",
+  "meta_title": "Assistenza Celle Frigorifere Rimini | Riparazione Frigo Industriali",
+  "meta_description": "Cella frigorifera o frigo industriale guasto a Rimini e riviera? Ti mettiamo in contatto con un frigorista della zona. Chiamata gratuita, preventivo senza impegno.",
+  "badge": "Rimini e riviera",
+  "h1": "Cella frigorifera guasta a Rimini?",
+  "subtitle": "Ti mettiamo in contatto con un frigorista della zona per ristoranti, bar, hotel e negozi alimentari.",
+  "phone_display": "DA_INSERIRE",
+  "phone_tel": "+39DA_INSERIRE",
+  "hours": "Lun–Sab 8:00–20:00",
+  "webhook": "https://hook.eu1.make.com/ba7bw9e48s6bw4au39r3u6fu8prt2sws",
+  "name_placeholder": "Es. Ristorante Da Mario",
+  "issues_title": "Guasti più comuni",
+  "issues": [
+    {"label": "La cella non raffredda", "desc": "temperatura che sale, compressore che non parte o non si ferma."},
+    {"label": "Perdita di gas o liquido", "desc": "ghiaccio anomalo sull'evaporatore, acqua sotto l'impianto, calo di resa."},
+    {"label": "Fabbricatore di ghiaccio bloccato", "desc": "non produce ghiaccio o lo produce irregolare."},
+    {"label": "Allarme / blocco elettronico", "desc": "centralina in allarme o display con codice di errore."},
+    {"label": "Banchi frigo e abbattitori", "desc": "vetrine, banchi bar, abbattitori che non tengono la temperatura."}
+  ],
+  "warning": "",
+  "zones": ["Rimini", "Riccione", "Cattolica", "Bellaria–Igea Marina", "Misano Adriatico", "Santarcangelo di Romagna", "Coriano", "San Giovanni in Marignano"],
+  "brands_title": "Impianti trattati",
+  "brands": ["Zanussi Professional", "Angelo Po", "Bonnet Névé", "Electrolux Professional", "Irinox", "Scotsman", "Brema", "Ice-O-Matic", "Costan", "Epta"],
+  "faq": [
+    {"q": "Quanto costa la chiamata?", "a": "Il servizio di contatto è gratuito. Il costo dell'intervento lo concordi direttamente con il frigorista, che ti dà un preventivo."},
+    {"q": "Chi esegue l'intervento?", "a": "Un frigorista o una ditta indipendente abilitata della zona, che ti fattura direttamente."},
+    {"q": "Lavorate anche fuori stagione?", "a": "Sì, i tecnici partner lavorano tutto l'anno per ristoranti, bar e negozi."}
+  ],
+  "operator_line": "Servizio gestito da DA_INSERIRE nome e cognome · email: DA_INSERIRE",
+  "gads_id": "",
+  "gads_call_label": "",
+  "gads_form_label": ""
+}
