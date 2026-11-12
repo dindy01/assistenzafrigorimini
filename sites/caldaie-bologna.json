@@ -1,39 +1,106 @@
 {
   "slug": "caldaie-bologna",
-  "domain": "DA_INSERIRE-dominio-caldaie-bologna.it",
-  "site_name": "Tecnico Caldaie Bologna",
+  "domain": "caldaiabologna.it",
+  "site_name": "Caldaia Bologna",
   "color": "#c53030",
   "meta_title": "Riparazione Caldaie Bologna | Tecnico per caldaia guasta",
-  "meta_description": "Caldaia in blocco, senza acqua calda o termosifoni freddi a Bologna? Ti mettiamo in contatto con un tecnico caldaie della tua zona. Chiamata gratuita, preventivo senza impegno.",
+  "meta_description": "Caldaia in blocco, senza acqua calda o termosifoni freddi a Bologna? Ti mettiamo in contatto con un tecnico caldaie della tua zona. Servizio gratuito, preventivo senza impegno.",
   "badge": "Bologna e provincia",
   "h1": "Caldaia guasta a Bologna?",
   "subtitle": "Ti mettiamo in contatto con un tecnico caldaie della tua zona. Preventivo prima dell'intervento, nessun obbligo.",
-  "phone_display": "DA_INSERIRE",
-  "phone_tel": "+39DA_INSERIRE",
+  "phone_display": "351 806 6780",
+  "phone_tel": "+393518066780",
   "hours": "Lun–Sab 8:00–20:00",
   "webhook": "https://hook.eu1.make.com/ba7bw9e48s6bw4au39r3u6fu8prt2sws",
   "name_placeholder": "Es. Mario Rossi",
   "issues_title": "Guasti più comuni",
   "issues": [
-    {"label": "Caldaia in blocco / codice errore", "desc": "la caldaia si spegne o mostra un codice di errore (es. E01, F28, A01) e non riparte dopo il reset."},
-    {"label": "Niente acqua calda", "desc": "il riscaldamento funziona ma dal rubinetto esce acqua fredda, o al contrario."},
-    {"label": "Pressione bassa / perde acqua", "desc": "il manometro scende sotto 1 bar, devi ricaricare spesso o c'è acqua sotto la caldaia."},
-    {"label": "Termosifoni freddi", "desc": "la caldaia è accesa ma i termosifoni restano freddi o scaldano solo in parte."},
-    {"label": "Rumori o accensioni continue", "desc": "colpi, fischi, ventola rumorosa o la caldaia si accende e si spegne di continuo."},
-    {"label": "Manutenzione / bollino", "desc": "controllo periodico, pulizia e analisi dei fumi previsti per legge."}
+    {
+      "label": "Caldaia in blocco / codice errore",
+      "desc": "la caldaia si spegne o mostra un codice di errore (es. E01, F28, A01) e non riparte dopo il reset."
+    },
+    {
+      "label": "Niente acqua calda",
+      "desc": "il riscaldamento funziona ma dal rubinetto esce acqua fredda, o al contrario."
+    },
+    {
+      "label": "Pressione bassa / perde acqua",
+      "desc": "il manometro scende sotto 1 bar, devi ricaricare spesso o c'è acqua sotto la caldaia."
+    },
+    {
+      "label": "Termosifoni freddi",
+      "desc": "la caldaia è accesa ma i termosifoni restano freddi o scaldano solo in parte."
+    },
+    {
+      "label": "Rumori o accensioni continue",
+      "desc": "colpi, fischi, ventola rumorosa o la caldaia si accende e si spegne di continuo."
+    },
+    {
+      "label": "Sostituzione caldaia",
+      "desc": "caldaia vecchia o che si guasta spesso? Preventivo per una caldaia nuova a condensazione, installazione inclusa."
+    },
+    {
+      "label": "Manutenzione / bollino",
+      "desc": "controllo periodico, pulizia e analisi dei fumi previsti per legge."
+    }
   ],
   "warning": "Senti odore di gas? Non accendere luci o interruttori, apri le finestre, chiudi il rubinetto del gas, esci di casa e chiama il pronto intervento gas del tuo distributore (numero in bolletta) o il 112. Non è un intervento per cui chiamare noi.",
-  "zones": ["Bologna centro", "Navile", "San Donato–San Vitale", "Santo Stefano", "Porto–Saragozza", "Borgo Panigale–Reno", "Savena", "Casalecchio di Reno", "San Lazzaro di Savena", "Castel Maggiore", "Zola Predosa", "Granarolo dell'Emilia", "Castenaso", "Pianoro", "Calderara di Reno", "Anzola dell'Emilia"],
-  "brands_title": "Caldaie trattate",
-  "brands": ["Beretta", "Immergas", "Baxi", "Vaillant", "Ariston", "Riello", "Ferroli", "Junkers Bosch", "Viessmann", "Hermann Saunier Duval", "Sime", "Chaffoteaux"],
-  "faq": [
-    {"q": "Quanto costa la chiamata?", "a": "Il servizio di contatto è gratuito. Il costo dell'intervento lo concordi direttamente con il tecnico, che ti fa un preventivo prima di iniziare."},
-    {"q": "In quanto tempo arriva il tecnico?", "a": "Dipende dalla zona e dal periodo: in inverno i tecnici sono molto richiesti. Ti diciamo subito una stima realistica quando ci chiami."},
-    {"q": "Chi esegue l'intervento?", "a": "Un tecnico o una ditta indipendente abilitata che lavora nella tua zona. Esegue il lavoro e ti rilascia direttamente fattura o ricevuta."},
-    {"q": "Fate anche la manutenzione annuale e il bollino?", "a": "Sì, il tecnico partner può occuparsi di manutenzione, analisi fumi e aggiornamento del libretto di impianto."},
-    {"q": "La mia caldaia è in garanzia, posso chiamarvi?", "a": "Se la caldaia è in garanzia ti conviene contattare prima il centro assistenza autorizzato del marchio, per non perdere la copertura."}
+  "zones": [
+    "Bologna centro",
+    "Navile",
+    "San Donato–San Vitale",
+    "Santo Stefano",
+    "Porto–Saragozza",
+    "Borgo Panigale–Reno",
+    "Savena",
+    "Casalecchio di Reno",
+    "San Lazzaro di Savena",
+    "Castel Maggiore",
+    "Zola Predosa",
+    "Granarolo dell'Emilia",
+    "Castenaso",
+    "Pianoro",
+    "Calderara di Reno",
+    "Anzola dell'Emilia"
   ],
-  "operator_line": "Servizio gestito da DA_INSERIRE nome e cognome · email: DA_INSERIRE",
+  "brands_title": "Caldaie trattate",
+  "brands": [
+    "Beretta",
+    "Immergas",
+    "Baxi",
+    "Vaillant",
+    "Ariston",
+    "Riello",
+    "Ferroli",
+    "Junkers Bosch",
+    "Viessmann",
+    "Hermann Saunier Duval",
+    "Sime",
+    "Chaffoteaux"
+  ],
+  "faq": [
+    {
+      "q": "Quanto costa la chiamata?",
+      "a": "Il servizio di contatto è gratuito. Il costo dell'intervento lo concordi direttamente con il tecnico, che ti fa un preventivo prima di iniziare."
+    },
+    {
+      "q": "In quanto tempo arriva il tecnico?",
+      "a": "Dipende dalla zona e dal periodo: in inverno i tecnici sono molto richiesti. Ti diciamo subito una stima realistica quando ci chiami."
+    },
+    {
+      "q": "Chi esegue l'intervento?",
+      "a": "Un tecnico o una ditta indipendente abilitata che lavora nella tua zona. Esegue il lavoro e ti rilascia direttamente fattura o ricevuta."
+    },
+    {
+      "q": "Fate anche la manutenzione annuale e il bollino?",
+      "a": "Sì, il tecnico partner può occuparsi di manutenzione, analisi fumi e aggiornamento del libretto di impianto."
+    },
+    {
+      "q": "La mia caldaia è in garanzia, posso chiamarvi?",
+      "a": "Se la caldaia è in garanzia ti conviene contattare prima il centro assistenza autorizzato del marchio, per non perdere la copertura."
+    }
+  ],
+  "operator_line": "Servizio gestito da Mouhamadou Dindy Ba · email: skuwork2001@gmail.com",
   "gads_id": "",
   "gads_call_label": "",
   "gads_form_label": ""
