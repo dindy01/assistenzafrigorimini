@@ -28,11 +28,15 @@ def gads_snippets(cfg):
     gid = cfg.get("gads_id", "")
     if not gid or PLACEHOLDER_MARK in gid:
         return "", "", ""
+    is_gtm = gid.startswith("GTM-")
+    tag_src = (f"https://www.googletagmanager.com/gtm.js?id={e(gid)}" if is_gtm
+               else f"https://www.googletagmanager.com/gtag/js?id={e(gid)}")
+    cfg_line = "" if is_gtm else f"gtag('config','{e(gid)}');"
     head = f"""<script>
 window.dataLayer=window.dataLayer||[];function gtag(){{dataLayer.push(arguments);}}
 gtag('consent','default',{{ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',analytics_storage:'denied'}});
 try{{if(localStorage.getItem('cc')==='1')gtag('consent','update',{{ad_storage:'granted',ad_user_data:'granted',ad_personalization:'denied',analytics_storage:'granted'}});}}catch(_){{}}
-gtag('js',new Date());gtag('config','{e(gid)}');
+gtag('js',new Date());{cfg_line}
 document.addEventListener('DOMContentLoaded',function(){{var s;try{{s=localStorage.getItem('cc');}}catch(_){{}}if(s)return;
 var b=document.createElement('div');b.style.cssText='position:fixed;left:8px;right:8px;bottom:84px;background:#1a202c;color:#fff;padding:12px;border-radius:8px;font-size:13px;z-index:9;max-width:520px;margin:0 auto';
 b.innerHTML='Usiamo cookie di Google Ads solo per misurare le richieste generate dagli annunci. <a href="privacy.html" style="color:#fff">Info</a><div style="margin-top:8px;display:flex;gap:8px"><button id="ccy" style="padding:8px">Accetta</button><button id="ccn" style="padding:8px;background:#4a5568">Rifiuta</button></div>';
@@ -40,7 +44,7 @@ document.body.appendChild(b);
 function set(v){{try{{localStorage.setItem('cc',v);}}catch(_){{}}if(v==='1')gtag('consent','update',{{ad_storage:'granted',ad_user_data:'granted',ad_personalization:'denied',analytics_storage:'granted'}});b.remove();}}
 document.getElementById('ccy').onclick=function(){{set('1')}};document.getElementById('ccn').onclick=function(){{set('0')}};}});
 </script>
-<script async src="https://www.googletagmanager.com/gtag/js?id={e(gid)}"></script>"""
+<script async src="{tag_src}"></script>"""
     call_label = cfg.get("gads_call_label", "")
     form_label = cfg.get("gads_form_label", "")
     call_conv = (f"track('conversion', {{send_to: '{e(gid)}/{e(call_label)}'}});"

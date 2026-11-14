@@ -5,7 +5,19 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Richiesta ricevuta | Caldaia Bologna</title>
 <meta name="robots" content="noindex">
-
+<script>
+window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}
+gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',analytics_storage:'denied'});
+try{if(localStorage.getItem('cc')==='1')gtag('consent','update',{ad_storage:'granted',ad_user_data:'granted',ad_personalization:'denied',analytics_storage:'granted'});}catch(_){}
+gtag('js',new Date());
+document.addEventListener('DOMContentLoaded',function(){var s;try{s=localStorage.getItem('cc');}catch(_){}if(s)return;
+var b=document.createElement('div');b.style.cssText='position:fixed;left:8px;right:8px;bottom:84px;background:#1a202c;color:#fff;padding:12px;border-radius:8px;font-size:13px;z-index:9;max-width:520px;margin:0 auto';
+b.innerHTML='Usiamo cookie di Google Ads solo per misurare le richieste generate dagli annunci. <a href="privacy.html" style="color:#fff">Info</a><div style="margin-top:8px;display:flex;gap:8px"><button id="ccy" style="padding:8px">Accetta</button><button id="ccn" style="padding:8px;background:#4a5568">Rifiuta</button></div>';
+document.body.appendChild(b);
+function set(v){try{localStorage.setItem('cc',v);}catch(_){}if(v==='1')gtag('consent','update',{ad_storage:'granted',ad_user_data:'granted',ad_personalization:'denied',analytics_storage:'granted'});b.remove();}
+document.getElementById('ccy').onclick=function(){set('1')};document.getElementById('ccn').onclick=function(){set('0')};});
+</script>
+<script async src="https://www.googletagmanager.com/gtm.js?id=GTM-MH4MGQXK"></script>
 
 <style>
 body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;margin:0;background:#f7fafc;color:#1a202c;line-height:1.55}
